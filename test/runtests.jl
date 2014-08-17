@@ -1,6 +1,6 @@
 module TestOpenCL
 	using FactCheck
-    
+
     @runtest OpenCL test_platform 
     @runtest OpenCL test_context 
     @runtest OpenCL test_device 
@@ -9,7 +9,8 @@ module TestOpenCL
     @runtest OpenCL test_buffer 
     @runtest OpenCL test_program 
     @runtest OpenCL test_kernel
-	@runtest OpenCL behavior_tests
+    @runtest OpenCL behavior_tests
+    @runtest OpenCL test_memory
     exitstatus()
 
 end # module
